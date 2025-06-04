@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SenderPlus - Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-container">
+    <h2>SenderPlus Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Usuário" required />
+      <input type="password" id="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+    <div id="error-msg"></div>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <h2>Bem-vindo, <span id="user-name"></span></h2>
+    <div id="user-role"></div>
+    <button id="logout-btn">Sair</button>
+
+    <div id="admin-panel" style="display:none;">
+      <h3>Área do Admin</h3>
+      <p>Controle de usuários e mensagens (simples)</p>
+    </div>
+
+    <div id="user-panel" style="display:none;">
+      <h3>Área do Usuário</h3>
+      <p>Seu painel personalizado aqui.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
